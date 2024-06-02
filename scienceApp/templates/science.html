@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+科研基地
+{% endblock %}
+
+{% block content %}
+<!-- 广告横幅 -->
+<div class="container-fluid">
+    <div class="row">
+        <img class="img-responsive model-img" src="{% static 'img/science.jpg' %}">
+    </div>
+</div>
+<!-- 主体内容 -->
+<div class="container">
+    <div class="model-details-title">
+        科研基地介绍
+    </div>
+    <div class="model-details">
+        <p>
+            近二十年来，恒达致力打造“志存高远，一诺千钧”的企业文化，不断吸纳和培养人工智能高精尖人才，逐步形成了...
+        </p>
+        <img class="img-responsive" src="{% static 'img/kyjd.jpg' %}">
+        <h3>研究方向</h3>
+        <h5>机器人导航：</h5>
+        <p>
+            多传感器路径规划、物联网一体化平台、远程人机交互、强化学习控制。
+        </p>
+        <h5>人体行为识别：</h5>
+        <p>
+            单用户行为识别、人体骨骼大数据分析、鲁棒特征抽取、多用户行为识别。
+        </p>
+        <h5>人脸属性识别：</h5>
+        <p>
+            人脸检测、属性分析、行人再识别。
+        </p>
+    </div>
+</div>
+{% endblock %}

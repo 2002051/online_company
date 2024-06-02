@@ -1,0 +1,15 @@
+ re ①安装依赖库：
+	1.按Win+R，输入cmd，使用cd命令进入项目根目录（比如：D:\桌面\Django企业官网\hengDaProject）
+	2.在cmd中输入pip install -r requirements.txt一键导入所有第三方库
+	3.没有报错，即成功。
+②启动项目：
+	1.按Win+R，输入cmd，使用cd命令进入项目根目录（比如：D:\桌面\Django企业官网\hengDaProject）
+	2.在cmd中输入python manage.py runserver
+	3.没有报错，即成功。
+ps：要在本地运行，必须先启动项目
+③本地运行：
+	前端页面：浏览器地址栏输入：http://127.0.0.1:8000/
+	后台管理：浏览器地址栏输入：http://127.0.0.1:8000/admin/
+		超级用户：
+			用户名：     root
+			密码：  admin123

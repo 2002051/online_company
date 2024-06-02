@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+欢迎咨询
+{% endblock %}
+
+{% block content %}
+
+<link href="{% static 'css/contact.css' %}" rel="stylesheet">
+
+<!-- 广告横幅 -->
+<div class="container-fluid">
+    <div class="row">
+        <img class="img-responsive model-img" src="{% static 'img/contact.jpg' %}">
+    </div>
+</div>
+
+<!-- 主体内容 -->
+<div class="container">
+    <div class="row row-3">
+        <!-- 侧边导航栏 -->
+        <div class="col-md-3">
+            <div class="model-title">
+                人才招聘
+            </div>
+            <div class="model-list">
+                <ul class="list-group">
+                    <li class="list-group-item" id="mycontact">
+                        <a href="{% url 'contactApp:contact'  %}">欢迎咨询</a>
+                    </li>
+                    <li class="list-group-item" id="myrecruit">
+                        <a href="{% url 'contactApp:recruit'  %}">加入恒达</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 说明文字和图片 -->
+        <div class="col-md-9">
+            <div class="model-details-title">
+                欢迎咨询
+            </div>
+            <div class="col-md-6">
+                <div class="contact-left">
+                    <h1>
+                        <strong>恒达科技有限公司</strong>
+                        <span>HengDa Science and Technology</span>
+                    </h1>
+                    <ul>
+                        <li><span>业务质询一：</span>111-111111</li>
+                        <li><span>业务质询二：</span>222-222222</li>
+                        <li><span>咨询电话：</span>0111-1111111</li>
+                        <li><span>企业传真：</span>0222-2222222</li>
+                        <li><span>地址：</span>某某路某某大道某某号</li>
+                        <li><span>邮编：</span>2222-222222</li>
+                        <li><span>网址：</span>
+                            <a href="https://google.com">https://google.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 contact-right">
+                <img class="img-responsive" src="{% static 'img/address.png' %}">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
